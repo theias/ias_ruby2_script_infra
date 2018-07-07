@@ -30,10 +30,8 @@ module IAS::Infra::FullProjectPaths
 	def are_we_in_src_dir
 		bin_whence_dir = self.get_whence_dir()
 		path_components = bin_whence_dir.split('/')
-		# puts "Path components."
-		# puts path_components.join(',')
-		# puts "Second to last:"
-		# puts path_components[-2]
 		return path_components[-2].eql? 'src'
 	end
+
+	
 end
