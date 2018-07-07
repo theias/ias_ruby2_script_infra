@@ -8,15 +8,14 @@ require 'IAS/Infra/FindBin'
 class IAS::Infra
 	include IAS::Infra::Logger
 	include IAS::Infra::FindBin
-	
-	@debug_IAS_Infra = true;
+	@@debug_IAS_Infra = true;
 	def run()
 		# Admittedly, I don't know the best way
 		# to initialize these things (for now)
 		self.setup_IAS_infra_logging()
 		self.setup_IAS_infra_FindBin()
-		
-		if @debug_IAS_Infra
+				
+		if @@debug_IAS_Infra
 			self.debug_IAS_infra()
 		end
 		
