@@ -3,11 +3,8 @@
 module IAS; end
 module Infra; end
 
-# require 'IAS/Infra/FindBin'
-
 module IAS::Infra::FullProjectPaths
 
-	# include IAS::Infra::FindBin
 	@@bin_whence = 'RealBin'
 	
 	def init_whences
@@ -25,5 +22,18 @@ module IAS::Infra::FullProjectPaths
 	def debug_FullProject_Paths
 		puts "Bin whence: "
 		puts self.get_whence_dir()
+		
+		puts "We are in src dir?"
+		puts self.are_we_in_src_dir()
+	end
+	
+	def are_we_in_src_dir
+		bin_whence_dir = self.get_whence_dir()
+		path_components = bin_whence_dir.split('/')
+		# puts "Path components."
+		# puts path_components.join(',')
+		# puts "Second to last:"
+		# puts path_components[-2]
+		return path_components[-2].eql? 'src'
 	end
 end
