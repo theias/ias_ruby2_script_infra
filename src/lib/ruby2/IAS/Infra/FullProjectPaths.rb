@@ -29,7 +29,7 @@ module IAS::Infra::FullProjectPaths
 			@@project_name = @@script_path_components[-3]
 		else
 			@@up_path_components = ['..','..']
-			@@installed_package_name = script_path_components[-1]
+			@@installed_package_name = @@script_path_components[-1]
 		end		
 	end
 	
