@@ -24,9 +24,11 @@ class MyIASApp < IAS::Infra
 		log_critical("This is a critical message.")
 		log_error("This is an error message.")
 		log_alert("This is an alert message.")
-		log_emergency("This is an emergency message.")
-		log_eprint("This message goes to stderr.")
 
+		# log_emergency("This is an emergency message.")
+		log_eprint("This message goes to stderr.")
+		
+		self.debug_IAS_Infra()
 	end
 end
 

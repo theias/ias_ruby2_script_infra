@@ -12,13 +12,15 @@ class IAS::Infra
 	include IAS::Infra::FindBin
 	include IAS::Infra::FullProjectPaths
 	
-	@@debug_IAS_Infra = true;
+	# @@debug_IAS_Infra = true;
+	@@debug_IAS_Infra = false;
 	def run()
 		# Admittedly, I don't know the best way
 		# to initialize these things (for now)
 		self.setup_IAS_infra_logging()
 		self.setup_IAS_infra_FindBin()
-				
+		self.setup_IAS_Infra_FullProjectPaths()
+			
 		if @@debug_IAS_Infra
 			self.debug_IAS_infra()
 		end
@@ -30,7 +32,7 @@ class IAS::Infra
 		self.log_end()
 	end
 	
-	def debug_IAS_infra()
+	def debug_IAS_Infra()
 		self.debug_FindBin()
 		self.debug_FullProject_Paths
 	end
