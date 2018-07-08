@@ -5,7 +5,7 @@ class IAS::Infra; end
 
 module IAS::Infra::LoggerSyslog
 
-	def setup_IAS_infra_logging()
+	def setup_IAS_Infra_Logger()
 		@log_object = Syslog::Logger.new $0
 		@log_to_stderr = false
 	end

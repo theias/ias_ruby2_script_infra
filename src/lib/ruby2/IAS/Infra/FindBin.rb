@@ -6,7 +6,7 @@ module IAS::Infra::FindBin
 	
 	@@dollar_zero = $0
 
-	def setup_IAS_infra_FindBin()
+	def setup_IAS_Infra_FindBin()
 
 	end
 

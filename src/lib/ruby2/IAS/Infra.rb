@@ -17,12 +17,12 @@ class IAS::Infra
 	def run()
 		# Admittedly, I don't know the best way
 		# to initialize these things (for now)
-		self.setup_IAS_infra_logging()
-		self.setup_IAS_infra_FindBin()
+		self.setup_IAS_Infra_Logger()
+		self.setup_IAS_Infra_FindBin()
 		self.setup_IAS_Infra_FullProjectPaths()
 			
 		if @@debug_IAS_Infra
-			self.debug_IAS_infra()
+			self.debug_IAS_Infra()
 		end
 		
 		self.log_start()
