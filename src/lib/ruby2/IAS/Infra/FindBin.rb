@@ -27,14 +27,10 @@ module IAS::Infra::FindBin
 	end
 	
 	def debug_FindBin
-		puts "Script:"
-		puts self.Script()
-		puts "Bin:"
-		puts self.Bin()
-		puts "RealScript:"
-		puts self.RealScript()
-		puts "RealBin:"
-		puts self.RealBin()
+		puts "Script(): " + self.Script()
+		puts "Bin(): " + self.Bin()
+		puts "RealScript: " + self.RealScript()
+		puts "RealBin: " + self.RealBin()
 	end
 end
 

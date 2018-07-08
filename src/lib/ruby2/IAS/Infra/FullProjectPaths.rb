@@ -84,18 +84,18 @@ module IAS::Infra::FullProjectPaths
 	end
 
 	def debug_FullProject_Paths
-		puts "Bin whence: "
-		puts self.get_whence_dir()
 		
-		puts "We are in src dir?"
-		puts self.are_we_in_src_dir()
-
-		puts "Bin dir: " + self.bin_dir()
-		puts "Input dir: " + self.input_dir()
-		puts "Output dir: " + self.output_dir()
-		puts "Conf dir: " + self.conf_dir()
-		puts "Log dir: " + self.log_dir()
-		puts "Script output dir: " + self.script_output_dir()
+		puts "get_whence_dir(): " + self.get_whence_dir()
+		puts "are_we_in_src_dir(): " + (
+			self.are_we_in_src_dir() \
+				? "true" : "false"
+		)
+		puts "bin_dir(): " + self.bin_dir()
+		puts "input_dir(): " + self.input_dir()
+		puts "output_dir(): " + self.output_dir()
+		puts "conf_dir(): " + self.conf_dir()
+		puts "log_dir(): " + self.log_dir()
+		puts "script_output_dir(): " + self.script_output_dir()
 	end
 	
 end
