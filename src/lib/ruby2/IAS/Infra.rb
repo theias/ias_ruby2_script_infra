@@ -5,12 +5,14 @@ class IAS::Infra; end
 require 'IAS/Infra/Logger'
 require 'IAS/Infra/FindBin'
 require 'IAS/Infra/FullProjectPaths'
+require 'IAS/Infra/StandardFunctions'
 
 class IAS::Infra
 
 	include IAS::Infra::Logger
 	include IAS::Infra::FindBin
 	include IAS::Infra::FullProjectPaths
+	include IAS::Infra::StandardFunctions
 	
 	# @@debug_IAS_Infra = true;
 	@@debug_IAS_Infra = false;

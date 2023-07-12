@@ -14,6 +14,10 @@ module IAS::Infra::FindBin
 		return File.basename(@@dollar_zero)
 	end	
 	
+	def ScriptName
+		return File.basename(@@dollar_zero,File.extname(@@dollar_zero))
+	end	
+
 	def Bin
 		return File.expand_path(File.dirname(@@dollar_zero))
 	end
