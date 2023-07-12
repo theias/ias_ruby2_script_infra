@@ -1,7 +1,0 @@
-#Requires: 
-AutoReqProv: no 
-Summary: Ruby2 librarys for automation infrastructure
-Group: Generic Group
-License: Generic License
-Vendor: Generic Vendor
-BuildArch: noarch

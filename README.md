@@ -1,8 +1,10 @@
-# ias-ruby2-script-infra
+# ias_ruby2_script_infra
+
+Ruby2 libraries for automation infrastructure
 
 Here is an introduction to this project.
 
-# License
+## License
 
 copyright (C) 2017 Author, Institution
 
@@ -33,11 +35,11 @@ Supplemental documentation for this project can be found here:
 # Installation
 
 Ideally stuff should run if you clone the git repo, and install the deps specified
-in either "deb_control" or "rpm_specific"
+in either "DEBIAN/control" or "RPM/specfile.spec"
 
 Optionally, you can build a package which will install the binaries in
 
-* /opt/IAS/bin/ias-ruby2-script-infra/.
+* /opt/IAS/bin/ias-ruby2-script-infra/
 
 # Building a Package
 
@@ -55,29 +57,19 @@ Optionally, you can build a package which will install the binaries in
 
 * rpm-build
 
-## Export a specific tag (or just the source directory)
+## Export a specific tag (or just the project directory)
 
 ## Supported Systems
 
 ### Debian packages
 
-<pre>
-  fakeroot make clean install debsetup debbuild
-</pre>
+```
+  fakeroot make package-deb
+```
 
 ### RHEL Based Systems
 
-If you're building from a tag, and the spec file has been put
-into the tag, then you can build this on any system that has
-rpm building utilities installed, without fakeroot:
-
-<pre>
-make clean install cp-rpmspec rpmbuild
-</pre>
-
-This will generate a new spec file every time:
-
-<pre>
-fakeroot make clean install rpmspec rpmbuild
-</pre>
+```
+fakeroot make package-rpm
+```
 

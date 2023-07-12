@@ -1,0 +1,12 @@
+ias-ruby2-script-infra 1.1.0-0 noarch; urgency=low
+
+	* Added automatic output dir creation
+
+ -- Martin VanWinkle (mvanwinkle@ias.edu)  Wed, 12 Jul 2023 13:07:15 -0400
+
+ias-ruby2-script-infra 1.0.0-0 noarch; urgency=low
+
+	* initial packaging stuff
+
+ -- YOUR NAME HERE YOUR@EMAIL.HERE  Thu, 10 May 2018 16:22:20 -0400 
+

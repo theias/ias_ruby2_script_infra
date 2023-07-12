@@ -1,0 +1,13 @@
+{
+   "USE_AUTOMATION_PERMISSIONS" : 0,
+   "wiki_page" : "",
+   "package_name" : "ias-ruby2-script-infra",
+   "project_dir" : "ias_ruby2_script_infra",
+   "AUTOMATION_GROUP" : "iasnetauto",
+   "AUTOMATION_USER" : "iasnetauto",
+   "summary" : "Ruby2 libraries for automation infrastructure",
+   "installed_directory_layout" : "project_directories-full_project.gmk",
+   "project_name" : "ias_ruby2_script_infra",
+   "ticket" : "",
+   "BASE_DIR" : "/opt/IAS"
+}
