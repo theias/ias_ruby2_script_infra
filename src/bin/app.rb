@@ -3,9 +3,9 @@
 # maybe we should do something like:
 # $:.unshift('/opt/IAS/lib/ruby2') unless $:.include?('/opt/IAS/lib/ruby2')
 
-realbin=__FILE__
+realbin = $0
 if File.lstat(realbin).symlink?
-	realbin=File.readlink(__FILE__)
+	realbin=File.readlink($0)
 end
 
 $:.unshift('/opt/IAS/lib/ruby2')
